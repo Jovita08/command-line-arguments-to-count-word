@@ -7,20 +7,49 @@ Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
 
+Import sys module to use command line arguments.
+
 ### Step 2: 
  
+ Use the open() by getting the file name with "sys.argv[1]" which means the first index of given argument
 ### Step 3: 
+
+Iterate the content of the file using for loop.
 
 ### Step 4:  
 
+Split the contents into each line using .split() function.
+
 ### Step 5: 
+
+Iterate the list of lines and increment the value of variable (word) each time.
 
 ### Step 6: 
 
-## PROGRAM:
+Run the program by giving "python prgm.py EX12.txt" on the terminal.
 
+### Step 7:
+
+End of the Program.
+
+
+## PROGRAM:
+```
+#Program to count the no.of lines in a file using command line arguments.
+#Developed by: virgil jovita.a
+#RegisterNumber: 21500600
+import sys
+fp = open(sys.argv[1])
+words = 0
+for data in fp:
+    lines=data.split()
+    for line in lines:
+        words += 1
+print("Total No.of Words:",words)
+```
 ### OUTPUT:
 
+![output](o1.png)
 
 
 ## RESULT:
